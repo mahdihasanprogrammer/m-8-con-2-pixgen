@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
     return (
         <div className="shadow">
-            <nav className=" flex justify-center md:justify-between items-center  py-3 container mx-auto px-5 md:px-8 lg:px-12 flex-wrap">
+            <nav className=" flex justify-center md:justify-between items-center  py-3 container mx-auto px-5 md:px-8 lg:px-12 flex-wrap gap-2">
                 <div className="flex gap-2 items-center">
                     <Image
                         src={"/logo.png"}
