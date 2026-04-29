@@ -1,5 +1,6 @@
 import { Button, Card, Chip, Separator } from '@heroui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { IoHeart } from 'react-icons/io5';
 import { LuDownload } from 'react-icons/lu';
@@ -13,21 +14,25 @@ const CategoryCard = ({ category }) => {
                     alt={category.title}
                     fill={true}
                     sizes='sizes="(max-width: 768px) 100vw, 33vw"' />
-                    <Chip  className='absolute right-2 top-2'>{category.category}</Chip>
+                <Chip className='absolute right-2 top-2'>{category.category}</Chip>
             </div>
 
             <h1 className='font-semibold'>{category.title}</h1>
 
             <div className='flex justify-between items-center'>
                 <p className='flex items-center gap-2'>
-                    <IoHeart/>{category.likes}
+                    <IoHeart />{category.likes}
                 </p>
-                <Separator orientation='vertical'/>
+                <Separator orientation='vertical' />
                 <h3 className='flex items-center gap-2'>
-                    <LuDownload/>{category.downloads}
+                    <LuDownload />{category.downloads}
                 </h3>
             </div>
-            <Button className='w-full' variant='outline'>View Details</Button>
+            <Link href={`/all-photos/${category.id}`}>
+                <Button className='w-full' variant='outline'>
+                    View Details
+                </Button>
+            </Link>
         </Card>
 
     );
