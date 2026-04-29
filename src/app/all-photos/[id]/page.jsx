@@ -1,5 +1,5 @@
 import { getTopCategoriesData } from '@/lib/dataFetch';
-import { Button, Card, Chip, Separator } from '@heroui/react';
+import { Button, Chip, Separator } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -54,9 +54,9 @@ const PhotoDetailsPage = async ({ params }) => {
                  </div>
                 </div>
 
-                <Link href={`/all-photos/${category.id}`}>
-                    <Button className='w-full' variant='outline'>
-                        View Details
+                <Link href={`/`}>
+                    <Button className='w-full bg-purple-500'>
+                        Go Home
                     </Button>
                 </Link>
 
