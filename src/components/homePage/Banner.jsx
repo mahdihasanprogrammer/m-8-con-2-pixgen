@@ -17,13 +17,13 @@ const Banner = () => {
 
                         <div className="flex gap-4">
                             <Link href="#">
-                                <Button className="bg-linear-to-r from-pink-500 via-purple-500 bg-red-500 py-2 px-4 rounded-full">
+                                <Button className="bg-linear-to-r from-pink-500 via-purple-500 bg-red-500 py-2 px-4 rounded-full cursor-pointer">
                                     Generate Now
                                 </Button>
                             </Link>
 
                             <Link href="/pricing">
-                                <button className="text-white bg-transparent py-2 px-4 rounded-full border hover:bg-linear-to-r from-pink-500 via-purple-500 to-red-500 transition-all duration-500 hover:border-none">
+                                <button className="text-white bg-transparent py-2 px-4 rounded-full border hover:bg-linear-to-r from-pink-500 via-purple-500 to-red-500 transition-all duration-500 hover:border-none cursor-pointer">
                                     View Pricing
                                 </button>
                             </Link>
