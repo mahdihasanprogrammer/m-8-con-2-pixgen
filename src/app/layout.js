@@ -20,8 +20,10 @@ export default function RootLayout({ children }) {
       className={`${outfit.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar/>
-        {children}
+        <Navbar/>  
+        <main className="container mx-auto px-5 md:px-8 lg:px-12">
+          {children}
+        </main>
         <Footer/>
         </body>
     </html>
