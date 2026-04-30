@@ -20,9 +20,11 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${outfit.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body
+       className="min-h-full flex flex-col">
         <Navbar/>  
         <main className="container mx-auto px-5 md:px-8 lg:px-12">
           {children}

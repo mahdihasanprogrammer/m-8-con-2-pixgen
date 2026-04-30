@@ -79,13 +79,13 @@ const Navbar = () => {
                             <div className="flex justify-center items-center gap-3">
                                 <div className="text-xs">
                                     <p>hello !</p>
-                                    <p >{user.name}</p>
+                                    <p >{user?.name}</p>
                                 </div>
                                 <Avatar>
                                     <Avatar.Image
-                                        alt={user.name}
+                                        alt={user?.name}
                                         src={user?.image} referrerPolicy="no-referrer" />
-                                    <Avatar.Fallback>{user.name.charAt(0)}</Avatar.Fallback>
+                                    <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
                                 </Avatar>
                                 <Button onClick={handleSignOut}
                                     variant="danger">Logout</Button>

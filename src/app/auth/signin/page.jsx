@@ -28,13 +28,8 @@ export default function SignInPage() {
             email: e.target.email.value,
             password: e.target.password.value
         }, {
-            onRequest: () => {
-                <p>loading...</p>
-            }
-        },
-            {
                 onSuccess: () => {
-                    router.push('/all-photos')
+                    router.push('/')
                     alert('sign in successfully')
                 }
             })
