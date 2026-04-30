@@ -9,15 +9,18 @@ import {
     Form,
     Input,
     Label,
+    Separator,
     TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { FcGoogle } from "react-icons/fc";
 
 
 
 export default function SignInPage() {
 
     const router = useRouter();
+
     const handleSignIn = async (e) => {
         e.preventDefault();
 
@@ -42,7 +45,11 @@ export default function SignInPage() {
         }
     };
 
-
+    const handleSignInWithGoogle = async () => {
+        await authClient.signIn.social({
+            provider: "google",
+        });
+    }
 
     return (
         <div className="flex justify-center items-center h-[90vh]">
@@ -102,6 +109,15 @@ export default function SignInPage() {
                         </Button>
                         <Button type="reset" variant="secondary">
                             Reset
+                        </Button>
+                    </div>
+                    <div className=" space-y-3">
+                        <p className="text-xl text-center">or</p>
+                        <Separator />
+                        <Button size="lg"
+                          className={`bg-zinc-700 w-full `}
+                            onClick={handleSignInWithGoogle}>
+                            <FcGoogle className="size-5" />sign in with Google
                         </Button>
                     </div>
                 </Form>
