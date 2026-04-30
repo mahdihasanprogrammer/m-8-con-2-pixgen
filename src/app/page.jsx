@@ -1,10 +1,10 @@
-import CategoryCard from "@/components/CategoryCard";
+import PhotoCard from "@/components/PhotoCard";
 import Banner from "@/components/homePage/Banner";
 import { getTopCategoriesData } from "@/lib/dataFetch";
 
 
 export default async function Home() {
-const categories = await getTopCategoriesData();
+const photos = await getTopCategoriesData();
 
   return (
     <div>
@@ -13,9 +13,9 @@ const categories = await getTopCategoriesData();
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
         
-        {categories.slice(0,8).map(category => <CategoryCard
-         key={category.id}
-         category={category} />)}
+        {photos.slice(0,8).map(photo => <PhotoCard
+         key={photo.id}
+         photo={photo} />)}
       </div>
     </div>
   );
