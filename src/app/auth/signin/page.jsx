@@ -1,6 +1,5 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import { Check } from "@gravity-ui/icons";
 import {
     Button,
     Card,
@@ -47,8 +46,8 @@ export default function SignInPage() {
     }
 
     return (
-        <div className="flex justify-center items-center h-[90vh]">
-            <Card className="border mx-auto w-full md:w-125 py-10 mt-5">
+        <div className="flex justify-center items-center my-10">
+            <Card className="border mx-auto w-full md:w-md py-10 mt-5">
                 <h1 className="text-center text-2xl font-bold">Sign in</h1>
 
                 <Form className="flex w-full md:w-96 mx-auto flex-col gap-4" onSubmit={handleSignIn}>
@@ -99,8 +98,7 @@ export default function SignInPage() {
 
                     <div className="flex gap-2">
                         <Button type="submit">
-                            <Check />
-                            Submit
+                            Sign in
                         </Button>
                         <Button type="reset" variant="secondary">
                             Reset

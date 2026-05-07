@@ -47,9 +47,6 @@ const Navbar = () => {
                         <Link href={"/all-photos"}>All Photos</Link>
                     </li>
                     <li>
-                        <Link href={"/pricing"}>Pricing</Link>
-                    </li>
-                    <li>
                         <Link href={"/profile"}>Profile</Link>
                     </li>
                 </ul>
@@ -77,10 +74,6 @@ const Navbar = () => {
 
                             :
                             <div className="flex justify-center items-center gap-3">
-                                <div className="text-xs">
-                                    <p>hello !</p>
-                                    <p >{user?.name}</p>
-                                </div>
                                 <Avatar>
                                     <Avatar.Image
                                         alt={user?.name}
