@@ -74,7 +74,7 @@ const Navbar = () => {
 
                             :
                             <div className="flex justify-center items-center gap-3">
-                                <Avatar>
+                                <Avatar className="size-8">
                                     <Avatar.Image
                                         alt={user?.name}
                                         src={user?.image} referrerPolicy="no-referrer" />

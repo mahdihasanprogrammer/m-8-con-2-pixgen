@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🖼️ PixGen – AI Image Generation Gallery
 
-## Getting Started
+## 📖 Overview
+PixGen is a modern AI-powered image gallery platform where users can explore AI-generated artworks, view detailed prompts, filter images by category, and manage personal profiles securely.
+Built with Next.js, React, Tailwind CSS, MongoDB, and Better Auth, the project focuses on responsive design, protected routes, authentication, and a clean modern user experience.
 
-First, run the development server:
+## 🌐 Live Website
+🔗 https://m-8-con-2-pixgen.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💻 GitHub Repository
+🔗 https://github.com/mahdihasanprogrammer/m-8-con-2-pixgen.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
+- 🔐 Secure Authentication System
+- 🌍 Google Sign In Support
+- 🖼️ AI Generated Image Gallery
+- 🔍 Detailed Photo Information Page
+- 📂 Category Based Filtering
+- 👤 User Profile Management
+- ✏️ Update User Name & Profile Image
+- ❤️ Likes & 📥 Downloads Display
+- 📱 Fully Responsive Design
+- ⚡ Fast Navigation with Next.js App Router
+- 🎨 Modern AI Gallery Inspired UI
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Main Technologies
+### ⚛️ Frontend
+- Next.js 16
+- React 19
+- Tailwind CSS 4
+- HeroUI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔐 Authentication
+- Better Auth
+- Google OAuth
 
-## Learn More
+### 🗄️ Database
+- MongoDB
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 NPM Packages Used
+- 📦 @better-auth/mongo-adapter
+- 🎨 @gravity-ui/icons
+- 💎 @heroui/react
+- 🎭 @heroui/styles
+- 🔐 better-auth
+- 🗄️ mongodb
+- ⚛️ next
+- ⚛️ react
+- ⚛️ react-dom
+- 🎯 react-icons
+- ⏳ react-loader-spinner
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Run Locally
+1. Clone the repository
+   ```bash
+   git clone your_repository_link
+   ```
+2. Go to the project directory
+   ```bash
+   cd pixgen
+   ```
+3. Install dependencies
+   ```bash
+   npm install
+   ```
+4. Start the development server
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👨‍💻 Developer
+**Mahdi Hasan**
+Frontend Developer • MERN Stack Learner
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+This project was created for educational purposes.
