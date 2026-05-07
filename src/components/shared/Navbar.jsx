@@ -1,5 +1,4 @@
 "use client"
-
 import { authClient } from "@/lib/auth-client";
 import { Avatar, Button, Skeleton } from "@heroui/react";
 import Image from "next/image";
